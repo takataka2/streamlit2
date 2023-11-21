@@ -6,6 +6,14 @@ import pandas as pd
 
 st.title("Web App")
 st.write("**これがstreamlitアプリだ**")
+
+answer = st.button('Say hello')
+
+if answer == True:
+     st.write('Why hello there')
+else:
+     st.write('Goodbye')
+    
 data = {
     'lat': np.random.randn(100) / 100 + 35.68,
     'lon': np.random.randn(100) / 100 + 139.75,
